@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+  text-shadow: 0px -2px 30px rgba(83, 163, 255, 0.692);
+}
+ol a {
+  text-decoration: none;
+  opacity: 0.5;
+  transition: color 0.5s, text-shadow 0.5s, font-size 0.5s, opacity 0.2s;
+}
+ol a:hover {
+  color: rgba(83, 163, 255, 0.849);
+  text-shadow: 0px -2px 30px rgb(83, 163, 255);
+  font-size: 120%;
+  opacity: 1;
+}
+body {
+  background-image: url("../Imagenes/FondoInicio.jpg");
+  background-color: rgba(0, 0, 0, 0.719);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: soft-light;
+}
+.logo {
+  display: inline-block;
+  width: 5%;
+  margin: -1% auto;
+  vertical-align: bottom;
+}
+.logo img {
+  width: 100%;
+  height: auto;
+}
+header nav {
+  background: #312e3783;
+  padding: 0.5%;
+  border-bottom: 2px solid #94b1f1;
+  box-shadow: 0px 2px 30px rgba(83, 94, 255, 0.692);
+  backdrop-filter: blur(5px);
+}
+header nav ol {
+  text-align: right;
+}
+header nav li {
+  margin: 0 2%;
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+}
+section {
+  margin: 30px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section img{
+  box-shadow: 0px 2px 30px rgba(83, 255, 160, 0.692);
+  border: 2px solid #94f1b0;
+}
+.Articulos1 {
+  width: 95%;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, auto);
+  grid-template-areas: "Columna1 Columna2 Columna3";
+}
+.Articulos2 {
+  width: 95%;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, auto);
+  grid-template-areas: "Columna4 Columna5";
+}
+article {
+  position: relative;
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  align-items: center;
+  display: inline-block;
+  display: flex;
+  justify-content: space-around;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5%;
+  border-top: 2px solid #94b1f1;
+  box-shadow: 0px -2px 30px rgba(83, 94, 255, 0.692);
+  background: #312e3783;
+  backdrop-filter: blur(5px);
+}
+footer li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+footer ol {
+  text-align: center;
+  display: inline-block;
+  justify-content: space-between;
+}
